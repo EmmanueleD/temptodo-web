@@ -95,7 +95,7 @@ const password = ref('')
 const handleLogin = async () => {
   try {
     await authStore.login(email.value, password.value)
-    router.push('/')
+    router.push('/app')
   } catch (error) {
     // Error is handled by the store and displayed in the template
     console.error('Login failed:', error)
